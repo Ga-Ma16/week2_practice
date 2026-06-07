@@ -1,0 +1,121 @@
+:root {
+  --color-concrete-canvas: #e2e2df;
+  --color-cream-card: #f7f6f2;
+  --color-ink: #070607;
+  --color-paper-white: #ffffff;
+  --color-citra-orange: #fc5000;
+  --color-hazard-yellow: #f5f28e;
+
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-pp-neue-corp-compact: 'PP Neue Corp Compact', Impact, sans-serif;
+
+  --text-caption: 12px;
+  --text-body-sm: 14px;
+  --text-body: 16px;
+  --text-heading-sm: 26px;
+  --text-display: 96px;
+
+  --leading-display: 0.94;
+  --tracking-display: 1.92px;
+  --font-weight-medium: 500;
+
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-64: 64px;
+  --element-gap: 10px;
+
+  --page-max-width: 1280px;
+
+  --radius-tags: 20px;
+  --radius-cards: 40px;
+  --radius-inputs: 100px;
+  --radius-buttons: 40px;
+}
+
+body {
+  background-color: var(--color-concrete-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-dm-sans);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.caldera-container {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-64) var(--spacing-24);
+}
+
+.caldera-display {
+  font-family: var(--font-pp-neue-corp-compact);
+  font-size: var(--text-display);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 800;
+  margin-bottom: var(--spacing-32);
+}
+
+.caldera-input {
+  width: 100%;
+  background-color: var(--color-paper-white);
+  border: 1px solid var(--color-ink);
+  border-radius: var(--radius-inputs);
+  padding: var(--spacing-20) var(--spacing-24);
+  font-size: var(--text-body);
+  font-family: var(--font-dm-sans);
+  outline: none;
+  transition: border-width 0.1s ease;
+  margin-bottom: var(--spacing-24);
+  box-sizing: border-box;
+}
+
+.caldera-input:focus {
+  border-width: 2px;
+}
+
+.caldera-button {
+  background-color: var(--color-citra-orange);
+  color: var(--color-ink);
+  border: none;
+  border-radius: var(--radius-buttons);
+  padding: var(--spacing-16) var(--spacing-32);
+  font-family: var(--font-dm-sans);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.caldera-button:hover {
+  opacity: 0.9;
+}
+
+.caldera-card {
+  background-color: var(--color-cream-card);
+  border-radius: var(--radius-cards);
+  padding: var(--spacing-32);
+  margin-bottom: var(--spacing-16);
+}
+
+.caldera-stat-card {
+  background-color: var(--color-citra-orange);
+  border-radius: var(--radius-cards);
+  padding: var(--spacing-32);
+  color: var(--color-paper-white);
+}
+
+.caldera-tag {
+  background-color: var(--color-hazard-yellow);
+  color: var(--color-ink);
+  border-radius: var(--radius-tags);
+  padding: 4px var(--spacing-12);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-medium);
+  display: inline-block;
+  margin-bottom: var(--spacing-12);
+}
