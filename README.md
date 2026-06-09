@@ -1,10 +1,10 @@
-# ⚙️ CodeArrest Scope Engine
+# CodeArrest Scope Engine
 
-> **Automated, NLP-driven technical scoping matrix with a Brutalist Risograph-Zine aesthetic.**
+> **Automated, NLP-driven technical scoping matrix.**
 
-The CodeArrest Scope Engine is an internal AI tool designed to instantly parse raw client requirements and output structured technical architectures, complete with estimated timelines, module categories, and tech stacks. Built during a high-velocity sprint, it eliminates manual scoping overhead for agency projects.
+The CodeArrest Scope Engine is an internal AI tool designed to instantly parse raw client requirements and output structured technical architectures, complete with estimated timelines, module categories, and tech stacks.
 
-## 📐 Architecture & Data Flow
+##  Architecture & Data Flow
 
 ```mermaid
 graph TD
@@ -28,19 +28,19 @@ graph TD
     style I fill:#f5f28e,stroke:#070607,stroke-width:2px,color:#070607
 ```
 
-## 🎨 The Caldera Design System
+## The Design System
 The frontend completely abandons standard SaaS gloss in favor of a strictly functional, 90s editorial risograph-zine aesthetic:
 * **Concrete Canvas:** `#e2e2df` matte stone backgrounds.
 * **Citra Orange:** `#fc5000` reserved strictly for primary actions and massive stat cards.
 * **Typography:** Brutalist `PP Neue Corp Compact` for magazine-style display headers, paired with `DM Sans` for readable technical body text.
 * **Geometry:** Aggressive 40px border-radii with zero drop-shadows to maintain a flat, printed feel.
 
-## 🛠️ Technical Stack
+## Technical Stack
 * **Frontend:** React.js, Vite, Native CSS Custom Properties (Tokens)
 * **Backend:** Python, Django, `django-cors-headers`
 * **Logic:** Native Python Regular Expressions (Regex) NLP Matrix
 
-## 🚀 Local Launch Sequence
+## Local Launch Sequence
 
 To run the Scope Engine locally, you will need two terminal instances.
 
@@ -64,7 +64,7 @@ npm run dev
 ```
 *The canvas will render on `http://localhost:5173/`*
 
-## 🧪 Testing the Matrix
+## Testing the Matrix
 Once the UI is live, paste the following prompt into the text canvas to test the expanded logic triggers:
 
 > *"I need a highly specialized AI Chatbot for my clothing brand that helps people build their own outfits based on their personality, skin tone, body type, personal taste and fashion style, securely linked to a payment gateway."*
